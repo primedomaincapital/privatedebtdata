@@ -134,6 +134,17 @@ table.figs td.v{white-space:nowrap;font-weight:600;color:#fff}
 /* Phase 1 assembly 2026-10-31 — nav solid correction */
 @media (max-width:900px){nav{background:rgb(13,10,7)!important;backdrop-filter:none!important}}
 </style>
+<style>
+/* Mobile rendering fix 2026-10-31: domain H1 lines, stacked nav, header clearance */
+@media (max-width:900px){
+main h1{overflow-wrap:normal!important;word-break:normal!important}
+nav:not(.toc){flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+.topbar{flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+main{padding-top:120px!important}
+main h1 .h1-domain{display:block!important;font-size:clamp(19px,6vw,28px)!important;letter-spacing:0!important;word-break:keep-all!important;overflow-wrap:normal!important;line-height:1.25!important}
+main h1 .h1-title{display:block!important}
+}
+</style>
 </head>
 <body>
 <nav>
@@ -142,7 +153,7 @@ table.figs td.v{white-space:nowrap;font-weight:600;color:#fff}
 </nav>
 <main class="data">
 <p class="stamp">Market Data &middot; Last updated: October 25, 2026</p>
-<h1>PrivateDebtData.com Market Data</h1>
+<h1><span class="h1-domain">PrivateDebtData.<wbr>com</span> <span class="h1-title">Market Data</span></h1>
 <p class="lede">Private credit went from a backwater of leveraged finance to a market the IMF sizes above $2 trillion. The figures below come from public official and research sources, not from any fund marketing deck.</p>
 <p>In the spring of 2024, an investment committee could look at two pitch decks and see two different private credit markets. One said $1.5 trillion. The other said $3.5 trillion. Both were presented as fact, and the gap between them was not dishonesty so much as definition: some counts include only drawn loans, others add undrawn commitments, and some sweep in adjacent strategies that others leave out.</p>
 <p>The IMF's April 2024 Global Financial Stability Report chapter on private credit cut through that fog with a deliberately plain figure: more than $2 trillion globally, with about three-quarters of it in the United States. Two years later the IMF was still using roughly $2 trillion for the direct lending universe, a sign that the market's growth had slowed from its breakneck pace rather than a sign that anyone had settled the counting argument for good.</p>
