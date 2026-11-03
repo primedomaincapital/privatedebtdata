@@ -30,7 +30,7 @@ nav .price-tag b{color:var(--brass);font-weight:600}
 .hero-bg video{width:100%;height:100%;object-fit:cover;opacity:.5}
 .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--ink) 8%,rgba(13,10,7,.6) 45%,rgba(13,10,7,.35) 100%)}
 .eyebrow{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--brass);margin-bottom:26px}
-.hero h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(52px,8.5vw,124px);line-height:1.02;letter-spacing:-.01em;max-width:14ch;overflow-wrap:break-word;word-break:break-word}
+.hero h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(52px,8.5vw,124px);line-height:1.02;letter-spacing:-.01em;max-width:14ch}
 .hero h1 em{font-style:italic;color:var(--brass)}
 .hero .lede{margin-top:28px;max-width:56ch;font-size:19px;color:var(--cream-dim);font-weight:300}
 .hero-cta{margin-top:44px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
@@ -71,7 +71,7 @@ h2 em{font-style:italic;color:var(--brass)}
 .price-big{font-family:'Fraunces',serif;font-size:clamp(56px,7vw,96px);color:var(--brass);font-weight:300;margin:10px 0 36px}
 footer{position:relative;z-index:1;border-top:1px solid rgba(201,162,94,.16);padding:44px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--cream-dim);letter-spacing:.08em}
 footer a{color:var(--brass);text-decoration:none}
-@media(max-width:900px){nav,.hero,section{padding-left:24px;padding-right:24px}.duo,.buyers,.stats{grid-template-columns:1fr}.duo img{height:340px}}
+@media(max-width:900px){nav,.hero,section{padding-left:24px;padding-right:24px}.duo,.buyers,.stats{grid-template-columns:1fr}.duo img{height:340px}}@media(max-width:480px){.hero h1{font-size:8.5vw;max-width:none}}
 </style>
 </head>
 <body>
@@ -82,7 +82,7 @@ footer a{color:var(--brass);text-decoration:none}
 <header class="hero">
   <div class="hero-bg"><video autoplay muted loop playsinline poster="images/photo1.jpg"><source src="video/hero.mp4" type="video/mp4"></source></video></div>
   <div class="eyebrow reveal">A category-defining domain · Offered by Prime Domain Capital</div>
-  <h1 class="reveal">Private<em>Debt</em>Data<em>.</em>com</h1>
+  <h1 class="reveal">Private<wbr><em>Debt</em><wbr>Data<em>.</em>com</h1>
   <p class="lede reveal">Private credit is a $1.7 trillion market running on fragmented, hard-to-find data. The company that organizes it will need a name the entire industry already trusts. This is that name.</p>
   <div class="hero-cta reveal">
     <a class="btn" href="https://www.afternic.com/domain/privatedebtdata.com">Buy Now — $108,000</a>
